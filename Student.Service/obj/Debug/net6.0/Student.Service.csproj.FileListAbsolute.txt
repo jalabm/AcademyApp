@@ -1,0 +1,5 @@
+/Users/jal/Projects/Academy.App/Student.Service/obj/Debug/net6.0/Student.Service.csproj.AssemblyReference.cache
+/Users/jal/Projects/Academy.App/Student.Service/obj/Debug/net6.0/Student.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jal/Projects/Academy.App/Student.Service/obj/Debug/net6.0/Student.Service.AssemblyInfoInputs.cache
+/Users/jal/Projects/Academy.App/Student.Service/obj/Debug/net6.0/Student.Service.AssemblyInfo.cs
+/Users/jal/Projects/Academy.App/Student.Service/obj/Debug/net6.0/Student.Service.csproj.CoreCompileInputs.cache

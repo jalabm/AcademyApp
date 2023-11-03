@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.App", "Academy.App\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Core", "Academy.Core\Academy.Core.csproj", "{8AE208BF-F048-4356-83B9-499BB9F97FF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Data", "Academy.Data\Academy.Data.csproj", "{971E3B55-B688-4807-9FC3-E0C046FD2561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Service", "Student.Service\Academy.Service.csproj", "{D11190EC-A8C9-4291-BEF1-EF2498432570}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8AE208BF-F048-4356-83B9-499BB9F97FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AE208BF-F048-4356-83B9-499BB9F97FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AE208BF-F048-4356-83B9-499BB9F97FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971E3B55-B688-4807-9FC3-E0C046FD2561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971E3B55-B688-4807-9FC3-E0C046FD2561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971E3B55-B688-4807-9FC3-E0C046FD2561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971E3B55-B688-4807-9FC3-E0C046FD2561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11190EC-A8C9-4291-BEF1-EF2498432570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11190EC-A8C9-4291-BEF1-EF2498432570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11190EC-A8C9-4291-BEF1-EF2498432570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11190EC-A8C9-4291-BEF1-EF2498432570}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
