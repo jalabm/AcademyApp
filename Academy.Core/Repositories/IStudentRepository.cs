@@ -1,11 +1,11 @@
 ﻿using System;
+using Academy.Core.Models;
+
 namespace Academy.Core.Repositories
 {
-	public class IStudentRepository
+	public interface IStudentRepository:IRepository<Student>
 	{
-		public IStudentRepository()
-		{
-		}
+		
 	}
 }
 

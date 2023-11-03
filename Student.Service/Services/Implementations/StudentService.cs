@@ -1,7 +1,6 @@
 ﻿using Academy.Core.Enums;
 using Academy.Core.Repositories;
 using Academy.Data.Repositories;
-using Academy.Core.Models.BaseModels;
 using Academy.Service.Services.Interfaces;
 using Academy.Core.Models;
 
@@ -21,7 +20,8 @@ namespace Academy.Service.Services.Implementations
                 return "Average can not be less than 0";
 
            Student student = new Student(fullName, group, average, educationCategory);
-           await _studentRepository.AddAsync(student);
+            student.CreatedAt = DateTime.UtcNow.AddHours(4);
+            await _studentRepository.AddAsync(student);
 
             return "Created successfully";
         }
@@ -39,18 +39,35 @@ namespace Academy.Service.Services.Implementations
         public async Task<string> GetAsync(string id)
         {
             Student student = await _studentRepository.GetAsync(x => x.Id == id);
-            if (student == null) ;
-            return "student not found";
+            if (student == null) 
+                   return "student not found";
+            Console.WriteLine($"Id:{student.Id},Fullname:{student.FullName},Group:{student.Group},Average:{student.Average}, educationCategory:{student.EducationCategory},CreatedAt:{student.CreatedAt},UpdatedAt:{student.UpdatedAt}");
+            return "Successfully Process";
         }
 
-        public Task<string> RemoveAsync(string id)
+        public async Task<string> RemoveAsync(string id)
         {
-            throw new NotImplementedException();
+            Student student = await _studentRepository.GetAsync(x => x.Id == id);
+            if (student == null)
+                return "student not found";
+
+             await _studentRepository.RemoveAsync(student);
+            return "Removed Successfully";
+
         }
 
-        public Task<string> UpdateAsync(string fullName, string group, double average, EducationCategory educationCategory)
+        public async Task<string> UpdateAsync( string id,string fullName, string group, double average, EducationCategory educationCategory)
         {
-            throw new NotImplementedException();
+            Student student = await _studentRepository.GetAsync(x => x.Id == id);
+            if (student == null)
+                return "student not found";
+
+            student.FullName = fullName;
+            student.Group = group;
+            student.Average = average;
+            student.EducationCategory = educationCategory;
+            student.UpdatedAt = DateTime.UtcNow.AddHours(4);
+            return "Updated Successfully";
         }
     }
 }

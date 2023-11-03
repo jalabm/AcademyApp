@@ -28,11 +28,6 @@ namespace Academy.Data.Repositories
             return values.FirstOrDefault(func);
         }
 
-        public Task GetAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task RemoveAsync(T entity)
         {
             values.Remove(entity);

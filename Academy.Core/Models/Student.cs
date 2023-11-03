@@ -17,11 +17,12 @@ namespace Academy.Core.Models
         public Student(string fullName, string group, double average, EducationCategory educationCategory)
         {
             _id++;
+            Id = $"{EducationCategory.ToString()[0]}-{_id}";
             FullName = fullName;
             Group = group;
             Average = average;
             EducationCategory = educationCategory;
-            Id = $"{EducationCategory.ToString()[0]}-{_id}";
+           
 
         }
     }
