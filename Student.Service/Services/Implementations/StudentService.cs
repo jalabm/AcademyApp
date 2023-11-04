@@ -4,6 +4,7 @@ using Academy.Data.Repositories;
 using Academy.Service.Services.Interfaces;
 using Academy.Core.Models;
 
+
 namespace Academy.Service.Services.Implementations
 {
     public class StudentService : IStudentService
@@ -23,7 +24,7 @@ namespace Academy.Service.Services.Implementations
             student.CreatedAt = DateTime.UtcNow.AddHours(4);
             await _studentRepository.AddAsync(student);
 
-            return "Created successfully";
+            return "Student created successfully";
         }
 
         public async Task GetAllAsync()
@@ -52,7 +53,7 @@ namespace Academy.Service.Services.Implementations
                 return "student not found";
 
              await _studentRepository.RemoveAsync(student);
-            return "Removed Successfully";
+            return "Student removed Successfully";
 
         }
 
@@ -60,14 +61,21 @@ namespace Academy.Service.Services.Implementations
         {
             Student student = await _studentRepository.GetAsync(x => x.Id == id);
             if (student == null)
-                return "student not found";
+                return "Student can not found";
+
+            if (string.IsNullOrWhiteSpace(fullName))
+                return "FullName can not be empty";
+            if (string.IsNullOrWhiteSpace(group))
+                return "Group can not be empty";
+            if (average <= 0)
+                return "Average can not be less than 0";
 
             student.FullName = fullName;
             student.Group = group;
             student.Average = average;
             student.EducationCategory = educationCategory;
             student.UpdatedAt = DateTime.UtcNow.AddHours(4);
-            return "Updated Successfully";
+            return "Student updated Successfully";
         }
     }
 }

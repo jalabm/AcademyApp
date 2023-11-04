@@ -31,6 +31,7 @@ namespace Academy.Service.Services.Implementations
                         await GetAllStudent();
                         break;
                     default:
+                        Console.WriteLine("Menu in this number is not exist");
                         break;
                 }
                 await Menu();
