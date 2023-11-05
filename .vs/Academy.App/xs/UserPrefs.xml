@@ -1,22 +1,41 @@
 ﻿<Properties StartupConfiguration="{2934BFC3-71AD-4BB3-BA6E-A2FED5D860B8}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Academy.App/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Student.Service/Services/Implementations/MenuService.cs">
     <Files>
-      <File FileName="Academy.Core/Models/Student.cs" Line="26" Column="1" IsPinned="True" />
-      <File FileName="Student.Service/Services/Implementations/StudentService.cs" Line="71" Column="10" IsPinned="True" />
-      <File FileName="Academy.Core/Models/BaseModels/BaseModel.cs" Line="1" Column="1" />
-      <File FileName="Academy.Data/Repositories/Repository.cs" Line="28" Column="48" />
-      <File FileName="Academy.Data/Repositories/StudentRepository.cs" Line="1" Column="1" />
-      <File FileName="Academy.Core/Enums/EducationCategory.cs" Line="1" Column="1" />
-      <File FileName="Academy.Core/Repositories/IRepository.cs" Line="12" Column="53" />
-      <File FileName="Academy.Core/Repositories/IStudentRepository.cs" Line="10" Column="2" />
-      <File FileName="Student.Service/Services/Interfaces/IStudentService.cs" Line="16" Column="2" />
-      <File FileName="Academy.App/Program.cs" Line="14" Column="44" />
+      <File FileName="Academy.App/Program.cs" />
+      <File FileName="Student.Service/Services/Implementations/MenuService.cs" Line="131" Column="1" />
+      <File FileName="Academy.Core/Models/Student.cs" />
+      <File FileName="Academy.Core/Repositories/IStudentRepository.cs" />
+      <File FileName="Academy.Core/Repositories/IRepository.cs" />
+      <File FileName="Academy.Data/Repositories/Repository.cs" />
+      <File FileName="Academy.Data/Repositories/StudentRepository.cs" />
+      <File FileName="Student.Service/Services/Implementations/StudentService.cs" Line="1" Column="1" />
+      <File FileName="Student.Service/Services/Interfaces/IStudentService.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Academy.App" selected="True" />
+          <Node name="Academy.App">
+            <Node name="Academy.App" expanded="True" />
+            <Node name="Academy.Core" expanded="True">
+              <Node name="Enums" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="BaseModels" expanded="True" />
+              </Node>
+              <Node name="Repositories" expanded="True" />
+            </Node>
+            <Node name="Academy.Data" expanded="True">
+              <Node name="Repositories" expanded="True" />
+            </Node>
+            <Node name="Academy.Service" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="Implementations" expanded="True">
+                  <Node name="MenuService.cs" selected="True" />
+                </Node>
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
